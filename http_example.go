@@ -5,6 +5,7 @@ import (
 )
 
 func Handler(w http.ResponseWriter, req *http.Request) { // 处理函数
+	// w 是写入到输出的东西 、 req 是请求，可以获取请求相关的东西
 	w.Write([]byte("Hello World")) // 输出Hello World到[浏览器输出]
 }
 
