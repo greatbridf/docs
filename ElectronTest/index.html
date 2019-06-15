@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ElectronTest</title>
+  <link rel="stylesheet" href="https://static.greatbridf.top/bootstrap.min.css">
+</head>
+<body>
+<div id="app" class="container-fluid">
+  <h1 id="title">Title</h1>
+  <div class="row">
+    <button class="btn btn-primary" onclick="ButtonClick()">Button</button>
+  </div>
+</div>  
+</body>
+<script>
+var num = 0
+function ButtonClick() {
+  alert('clicked!')
+  document.querySelector('#title').innerHTML = ++num
+}
+</script>
+</html>
