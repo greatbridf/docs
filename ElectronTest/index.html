@@ -10,8 +10,11 @@
 <div id="app" class="container-fluid">
   <h1 id="title">Title</h1>
   <div class="row">
-    <button class="btn btn-primary" onclick="ButtonClick()">Button</button>
+    <button id="button" class="btn btn-primary" onclick="ButtonClick()">Button</button>
   </div>
+  <h2 id="description">
+    No Content Yet
+  </h2>
 </div>  
 </body>
 <script>
@@ -19,6 +22,15 @@ var num = 0
 function ButtonClick() {
   alert('clicked!')
   document.querySelector('#title').innerHTML = ++num
+}
+document.onreadystatechange = () => {
+  setTimeout(()=> {
+    fetch('https://interface.greatbridf.top/cash_flow/?method=get')
+    .then((resp)=>resp.json())
+    .then((json)=>{
+      document.getElementById('description').innerText = json[0].description
+    })
+  }, 3000)
 }
 </script>
 </html>

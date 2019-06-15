@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "electron ."
+    "start": "electron .",
+    "unit": "testcafe \"electron:.\" index.test.js"
   },
   "repository": {
     "type": "git",
