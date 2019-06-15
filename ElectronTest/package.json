@@ -1,0 +1,25 @@
+{
+  "name": "electron-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"test\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/greatbridf/docs.git"
+  },
+  "keywords": [
+    "private"
+  ],
+  "author": "greatbridf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/greatbridf/docs/issues"
+  },
+  "homepage": "https://github.com/greatbridf/docs#readme",
+  "devDependencies": {
+    "electron": "^5.0.4"
+  }
+}
