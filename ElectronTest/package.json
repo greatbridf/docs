@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/greatbridf/docs#readme",
   "devDependencies": {
-    "electron": "^5.0.4",
+    "electron": "^18.3.7",
     "testcafe": "^1.2.1",
     "testcafe-browser-provider-electron": "0.0.10"
   }
